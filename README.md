@@ -1,29 +1,31 @@
 # Chapel Mode for Vim
 
-Fork/mirror of the official vim plugin shipped with [chapel](https://chapel-lang.org)
+Fork/mirror of the official vim plugin shipped with
+[chapel](https://chapel-lang.org)
 
 
 ### Installation
 
 With vim-plug:
 
-Add `Plug 'nebulaeandstars/vim-chapel'` to your `.vimrc`.
+`Plug 'nebulaeandstars/vim-chapel'`
+
+With Vundle:
+
+`Plugin 'nebulaeandstars/vim-chapel'`
 
 
-### File Descriptions
+### Changes from the original plugin
 
-+ **ftdetect/chpl.vim**
+  - `.chpl` files are now called `chapel` files, rather than `chpl` files, to be
+    more consistent with how vim refers to other languages' file-types.
 
-  - Allows vim to auto-detect the syntax highlighting scheme for .chpl files.
+  - The indentation component was removed, as it was fairly aggressive and
+    assumed a lot about what you wanted.
 
-+ **ftplugin/chpl.vim**
+  - It's on GitHub for easier integration with plugin managers.
 
-  - Useful editor settings supporting chpl, chpldoc
 
-+ **syntax/chpl.vim**
+### Contact info (to comply with the license)
 
-  - Syntax highlighting scheme for Chapel
-
-+ **indent/chpl.vim**
-
-  - Indenting scheme for Chapel
+email: [nebulaeandstars@gmail.com](mailto:nebulaeandstars@gmail.com).
